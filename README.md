@@ -9,7 +9,7 @@ Currenlty designed for image and JSON.XML files.
     -> compile the project and then add following lines in you app level build.gradle
     compile project(':textoimage')
     -> sync as everything should be good.
-To use the library simply call the constructor
+    To use the library simply call the constructor
          TextoImage textoImage = new TextoImage(context, Type.IMAGE, "url",yourImageView);
          textoImage.delegate = MyRecyclerViewAdapter.this;
          textoImage.execute();
@@ -20,8 +20,8 @@ To use the library simply call the constructor
         textoImage.delegate = MainActivity.this;
         textoImage.execute();
 
-Dont forget to implement the interface AsyncResponse  for formats other then image because thats where the data will be received after loading.
-@Override
-    public void dataLoaded(String output) {
+    Dont forget to implement the interface AsyncResponse  for formats other then image because thats where the data will be received after loading.
+    @Override
+       public void dataLoaded(String output) {
        //this is the data you asked for.
-    }
+     }
